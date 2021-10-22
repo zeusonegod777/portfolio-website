@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Высота секции приветствия должна быть равна высоте области просмотра (viewport).-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--css link-->
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body>
+    <!--Navbar section -->
+    <header>
+        <div class="welcome"> <img src="durov.jpg">
+            <h3 class="name">Yerden Sadibek</h3>
+            <p class="role">Frontend Developer</p>
+        </div>
+        <!--В портфолио должна быть навигационная панель с идентификатором navbar.-->
+        <nav class="navbar">
+            <!--Панель навигации должна содержать хотя бы одну ссылку, по которой можно перейти к различным разделам страницы. В данном случае это через href="#".-->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Navbar Section ends -->
+    <div id="menu" class="fas fa-bars"></div>
+    <!--Welcome Section Starts-->
+    <!--В портфолио должен быть раздел приветствия с идентификатором welcome-section.-->
+    <section class="welcome-section" id="home">
+        <h3>HLLOW WRLD!</h3>
+        <!--В разделе приветствия должен быть элемент h1, содержащий текст.-->
+        <H1>IM <span>YERDEN SADIBEK</span></H1>
+        <p>Ambitious and workaholic FRONTEND DEVELOPER who improve yourself every minute.</p>
+        <a href="#about">
+            <button class="btn">about me <i class="fas fa-user"></i></button>
+        </a>
+    </section>
+    <!--Welcome Section Ends-->
+    <!--About Section Starts-->
+    <section class="about" id="about">
+        <h1 class="heading"><span>About </span>me</h1>
+        <div class="row">
+            <div class="information">
+                <h3><span>name:</span> Yerden Sadibek</h3>
+                <h3><span>age:</span> 18</h3>
+                <h3><span>qualification:</span> BIT (Bachelor of Information Technology) </h3>
+                <h3><span>role:</span> Frontend Developer</h3>
+                <h3><span>language:</span> kazakh, russian, english and turkish</h3>
+                <a href="#">
+                    <button class="btn">download CV <i class="fas fa-download"></i></button>
+                </a>
+            </div>
+            <div class="counter">
+                <div class="box"> <span>1</span>
+                    <h3>year of experience</h3> </div>
+                <div class="box"> <span>7</span>
+                    <h3>projects completed</h3> </div>
+                <div class="box"> <span>15</span>
+                    <h3>Happy clients</h3> </div>
+                <div class="box"> <span>5+</span>
+                    <h3>Awards won</h3> </div>
+            </div>
+        </div>
+    </section>
+    <!--About Section Ends-->
+    <!--Education Section Starts-->
+    <section class="edu" id="edu">
+        <h1 class="heading">my <span>Education</span></h1>
+        <div class="box-container">
+            <div class="box"> <i class="fas fa-graduation-cap"></i> <span>2016</span>
+                <h3>Python Basics</h3>
+                <p>Install Python and write your first program; Utilize core programming tools such as functions and loops; </p>
+            </div>
+            <div class="box"> <i class="fas fa-graduation-cap"></i> <span>2017</span>
+                <h3>Programming Technologies</h3>
+                <p>Internet of Things (IoT) is one of those industries that I understand is very important, but I don’t understand how to think about it. My history as a frontend/UX/web programmer is probably putting me at a disadvantage. Nothing I see in the IoT world reminds me of what I know.</p>
+            </div>
+            <div class="box"> <i class="fas fa-graduation-cap"></i> <span>2018</span>
+                <h3>Information and Communications Technologies </h3>
+                <p>A course in ICT prepares graduates for many potential jobs with corporations, small businesses, schools and other organizations. They may seek entry-level jobs or chose to attend additional schooling. Positions available in the field of communication technology include clerk, secretary, office worker, retailer, file clerk, inventory worker, finance clerk and receptionist. They may also seek work as computer programmers, IT analysts and software salespersons. </p>
+            </div>
+            <div class="box"> <i class="fas fa-graduation-cap"></i> <span>2019</span>
+                <h3>Fundamentals of Information Systems</h3>
+                <p>Create custom real-time reports and applications as well as data extracts. Customize the function of the XML-based reporting engine. Programmatically access the database for reading and writing. Programmatically access the system’s business logic. Implement custom validations to implement business rules or to trigger any Python-based operation. Add custom columns to the Trading Manager. Implement Proprietary Valuation models.</p>
+            </div>
+            <div class="box"> <i class="fas fa-graduation-cap"></i> <span>2020</span>
+                <h3>Algorithms, Data Structures and Programming</h3>
+                <p>Binary search Asymptotic notation Selection sort Insertion sort Recursive algorithms Towers of Hanoi Merge sort Quick sort Graph representation Breadth-first search Further learning. </p>
+            </div>
+            <div class="box"> <i class="fas fa-graduation-cap"></i> <span>2021</span>
+                <h3>Web programming: front end</h3>
+                <p>HTML, CSS, JS, Bootstrap, React, Vue, Python, MangoDB, mySql, Git, GraphQL, Gulp, Webpack.</p>
+            </div>
+        </div>
+    </section>
+    <!--Education Section Ends-->
+    <!--Portfolio Section Starts-->
+    <!--В портфолио должен быть раздел проектов с идентификатором projects.-->
+    <section class="portfolio" id="portfolio">
+        <h1 class="heading">my <span>Projects</span></h1>
+        <div class="projects">
+            <!--Раздел проектов должен содержать как минимум один элемент с классом project-tile для хранения проекта.-->
+            <div class="project-tile">
+                <!--Раздел проектов должен содержать хотя бы одну ссылку на проект (можете указать любой сайт или приложение).-->
+                <a href="https://www.w3.org/"> <img src="flashcard.jpg" alt=""> </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://www.google.com/"> <img src="Hand of customer holding smartphone and making purchase in app.jpg" alt=""> </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://www.youtube.com/"> <img src="game.jpg" alt=""> </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://www.apple.com/ru/"> <img src="todo.jpg" alt=""> </a>
+            </div>
+            <div class="project-tile">
+                <a href="https://www.csail.mit.edu/"> <img src="vpiano.jpg" alt=""> </a>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio Section Ends-->
+    <!--Contacts Section Starts -->
+    <section class="contacts" id="contact">
+        <h1 class="heading"><span>Contact</span> me </h1>
+        <div class="row">
+            <div class="content">
+                <h3 class="title">Contact Info</h3>
+                <div class="info">
+                    <h3><i class="fas fa-envelope"></i><a href="https://www.gmail.com/" 
+ target="_blank">yerden18@gmail.com</a></h3>
+                    <!--В портфолио должна быть ссылка с идентификатором profile-link, которая открывает профиль GitHub, LinkedIn или Facebook в новой вкладке.-->
+                    <h3 class="profile-link">
+                <i class="fab fa-google"></i><a href="https://www.google.ru/" 
+                target="_blank">Google</a>
+                <i class="fab fa-twitter"></i><a href="https://twitter.com/elonmusk?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"  target="_blank">Twitter</a>
+                <i class="fab fa-vk"></i><a href="https://vk.com/" target="_blank">Vk</a>
+                
+                </h3>
+                    <h3><i class="fas fa-phone"></i> +7-777-77-77</h3>
+                    <h3><i class="fas fa-phone"></i> +7-777-17-18</h3>
+                    <h3><i class="fas fa-map-marker-alt"></i> Kazakhstan, Almaty - 050000. </h3> </div>
+            </div>
+            <form action="">
+                <input type="text" placeholder="name" class="box">
+                <input type="email" class="box" placeholder="email">
+                <input type="text" class="box" placeholder="project">
+                <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+                <button type="submit" class="btn"> send <i class="fas fa-paper-plane "></i></button>
+            </form>
+        </div>
+    </section>
+    <!--Contacts Section Ends -->
+    <!--Jquery link-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+    <!--js link-->
+    <script src="script.js"></script>
+</body>
+
+</html>
